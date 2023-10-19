@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function click1(){
+            var input= document.getElementById("m1").value;
+              var sqr=parseInt(input);
+              var some= sqr*sqr;
+            console.log(some);
+            document.getElementById("m2").value=some;;
+         }
+
+         function click2(){
+            var input= document.getElementById("m1").value;
+              var cb=parseInt(input);
+              var Cube= cb*cb*cb;
+            console.log(Cube);
+            document.getElementById("m2").value=Cube;;
+         }
+
+       
+        
+    </script>
+</head>
+<body>
+      
+    <div class="input-group">
+        <label>Enter Number</label><br>
+        <input type="text" class="form-control" placeholder="Username" id="m1" >
+      </div>
+    
+      <div class="input-group">
+        <label for="">Result</label><br>
+        <input type="text" value="" id="m2" class="form-control" placeholder="Your Email">
+      </div><br>
+
+      <button onclick="click1()">Square</button>
+      <button onclick="click2()">Cube</button>
+</body>
+</html>

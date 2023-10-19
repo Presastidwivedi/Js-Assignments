@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const fun1=()=>{
+            var ran= Math.floor(Math.random()*600);
+            document.getElementById("image").style.left=ran+"px";
+            document.getElementById("image").style.top=ran+"px";
+           console.log(ran);
+        }
+    </script>
+</head>
+<body>
+     <div>
+        <img onclick="fun1()" src="c.jpg" alt="" style="height: 150px; width: 150px; border-radius: 50%; position: absolute;" id="image">
+
+     </div>
+</body>
+</html>

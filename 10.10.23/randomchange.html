@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const img=()=>{
+              var m= Math.floor(Math.random()*1000);
+              var n = Math.floor(Math.random()*600);
+              document.getElementById("pic").style.left=m+"px";
+              document.getElementById("pic").style.top=n+"px";
+              setInterval()
+              m= Math.floor(Math.random()*1000);
+              n = Math.floor(Math.random()*600);
+              document.getElementById("dog").style.left=m+"px";
+              document.getElementById("dog").style.top=n+"px";
+              m= Math.floor(Math.random()*1000);
+              n = Math.floor(Math.random()*600);
+              document.getElementById("cat").style.left=m+"px";
+              document.getElementById("cat").style.top=n+"px";
+
+              console.log();
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center;">
+        <img src="p.jpg" alt="" style="height: 120px; border: solid indianred; border-radius: 50%; position: absolute;" id="pic">
+        <img src="c.jpg" alt="" style="height: 120px; border: solid indianred; border-radius: 50%; position: absolute;" id="cat">
+        <img src="dog.jpg" alt="" style="height: 120px; border: solid indianred; border-radius: 50%; position: absolute;" id="dog">
+        <button onclick="img()" style="padding: 5px; border: none; color: orangered; background-color: orange;border-radius: 50%;">click on me</button>
+    </div>
+</body>
+</html>

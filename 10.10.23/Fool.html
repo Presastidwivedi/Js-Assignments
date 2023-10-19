@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const No=()=>{
+            var no = parseInt(Math.random()*300);
+            var no1 = parseInt(Math.random()*300);
+            document.getElementById("click").style.left=no+"px";
+            document.getElementById("click").style.top=no1+"px";
+            console.log(no);
+        }
+        const Yes=()=>{
+            alert("Yes");
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <p>Are You Fool ?</p>
+        <button onclick="Yes()">Yes</button>
+        <button style="position: absolute;" id="click" onmouseover="No()">No</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+var d = parseInt(a)*parseInt(b);

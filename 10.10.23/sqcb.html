@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function sqr(x){
+           
+        //     var sq = document.getElementById("value").innerHTML=parseInt=(x*x);
+        // }
+        function click1(){
+            var input= document.getElementById("m1").value;
+              var sqr=parseInt(input);
+              var some= sqr*sqr;
+            console.log(some);
+            document.getElementById("m2").innerHTML=some;
+         }
+         function click2(){
+            var i= document.getElementById("m1").value;
+              var Cube=parseInt(i);
+              var cb= Cube*Cube*Cube;
+            console.log(cb);
+            document.getElementById("m2").innerHTML=cb;
+         }
+    </script>
+</head>
+<body>
+    <div>
+        <label for="">Enter No:</label>
+        <input type="text" value="" id="m1">
+        <h2>Result:</h2>
+        <div id="m2"></div>
+        <button onclick="click1()">Square</button>
+        <button onclick="click2()">Cube</button>
+    </div>
+</body>
+</html>
