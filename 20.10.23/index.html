@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(/images/jungle.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        div{
+            width: 100%;
+            float: left;
+            font-size:20px;
+            color:white;
+            
+        }
+        .a1{
+            width: 50%;
+           
+        }
+        .a2{
+            width: 50%;
+           
+            text-align: end;
+        }
+        .s1{
+            position: absolute;
+            width:95px;
+            border-radius: 50%;
+        }
+
+    </style>
+    <script>
+        var j=0;
+        function fun1()
+        {
+            j++;
+        
+            document.getElementById('m1').innerHTML=j;
+        }
+        var i=60;
+        function fun2()
+            {
+            i--;
+            if(i===0)
+            {
+                clearInterval(m);
+            }
+            document.getElementById('m2').innerHTML="Time Left:"+i;
+        }
+       
+       var m=setInterval("fun2()",1000);
+       function moveing()
+       {
+        var s1=parseInt(Math.random()*700);
+        var s2=parseInt(Math.random()*700);
+        document.getElementById("img1").style.top=s1+"px"
+        document.getElementById("img1").style.left=s2+"px"
+       }
+       setInterval("moveing()",2000);
+
+    </script>
+</head>
+<body >
+    <div class="r1">
+        <div class="a1" id="m1">0</div>
+        <div class="a2" id="m2">Time Left: 60</div>
+        <button  type="button" onclick="fun1()"><img id="img1" class="s1" src="/images/be.png"></button>
+    </div>
+</body>
+</html>

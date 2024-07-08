@@ -1,0 +1,22 @@
+body{
+    background-image: url(/images/cave.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div{
+    width: 100%;
+    float: left;
+    font-size: 25px;
+    color: white;
+}
+.time{
+      width: 50%;
+}
+.score{
+    width: 50%;
+    text-align: end;
+}
+.pic{
+    position: absolute;
+    width: 105px;
+}

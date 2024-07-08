@@ -1,11 +1,11 @@
 const fun1=()=>{
     // Hex code
-    const randomno = Math.floor(Math.random()*16777215);
+    const randomNo = Math.floor(Math.random()*16777215);
     // console.log(randomno);
-    const randomcode = "#" +randomno.toString(16);
+    const randomCode = "#" +randomNo.toString(16);
     // console.log(randomcode);
-    document.body.style.backgroundColor = randomcode;
-    document.getElementById("color-code").innerText = randomcode;
+    document.body.style.backgroundColor = randomCode;
+    document.getElementById("color-code").innerText = randomCode;
     // navigator.clipboard.writeText(randomcode)
 }   
 //  Event Call
